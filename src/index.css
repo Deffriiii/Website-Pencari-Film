@@ -1,0 +1,158 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+  background-color: #000000;
+}
+
+/* Styling untuk movie-list */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+/* Styling untuk movie card */
+.movie-card {
+  width: 200px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(67, 59, 59, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Menambahkan transisi untuk efek zoom */
+}
+
+.movie-card:hover,
+.movie-card:focus {
+  transform: scale(1.05); /* Zoom sedikit saat hover atau fokus */
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card h3 {
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+.movie-card p {
+  font-size: 0.9rem;
+  margin: 10px;
+  color: #555;
+}
+
+
+/* Styling untuk movie banner */
+.movie-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.banner-details {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  backdrop-filter: blur(5px);
+}
+
+.banner-details h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.banner-details p {
+  font-size: 1rem;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  margin-bottom: 10%;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Nerko One', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffc107;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Styling untuk search bar */
+.search {
+  position: fixed; /* Membuat search bar tetap berada di layar meskipun digulir */
+  top: 10px; /* Jarak dari atas halaman */
+  right: 20px; /* Jarak dari kanan halaman */
+  z-index: 1100; /* Memberikan z-index lebih tinggi agar tidak tertutup */
+}
+
+.search form {
+  display: flex;
+}
+
+.search input {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #0056b3;
+}
+
+
